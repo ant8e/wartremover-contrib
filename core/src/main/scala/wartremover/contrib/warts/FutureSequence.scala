@@ -7,7 +7,7 @@ object FutureSequence extends WartTraverser {
 
   val message =
     """Future.sequence is considered a code smell.
-      |Please make your the execution context is setup correctly if you are using a large number of futures.""".stripMargin
+      |Please make sure the execution context is setup correctly if you are using a large number of futures.""".stripMargin
 
   def apply(u: WartUniverse): u.Traverser = {
     import u.universe._
