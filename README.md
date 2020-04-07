@@ -227,3 +227,8 @@ f.andThen {
   case _ => println("other side-effect")
 }
 ```
+
+### FutureSequence
+
+Using `Future.sequence` can be an indicator that too many Futures are being executed concurrently. 
+This wart emits a warning. 
